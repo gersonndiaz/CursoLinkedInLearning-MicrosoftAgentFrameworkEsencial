@@ -8,7 +8,7 @@ Repositorio con los proyectos prácticos que voy desarrollando durante el curso 
 - [x] Módulo 2
 - [x] Módulo 3
 - [x] Módulo 4
-- [ ] Módulo 5
+- [x] Módulo 5
 
 ## Tecnologías
 
@@ -21,7 +21,7 @@ Repositorio con los proyectos prácticos que voy desarrollando durante el curso 
 | Proyecto | Descripción |
 |----------|-------------|
 | [myfirstagent](myfirstagent/) | Primer agente: crea un `ChatClientAgent` sobre OpenAI con opciones de chat (tokens máximos, nivel de razonamiento), responde en streaming sobre un PDF adjunto y muestra el uso de tokens. |
-| [myagent](myagent/) | Agente de políticas de viaje: usa herramientas de función (`AIFunctionFactory`) y skills basadas en archivos con `AgentSkillsProvider` (Microsoft.Agents.AI.OpenAI 1.23.0), con chat interactivo en streaming y uso de tokens. |
+| [myagent](myagent/) | Agente de políticas de viaje: usa herramientas de función (`AIFunctionFactory`) y skills basadas en archivos con `AgentSkillsProvider` (Microsoft.Agents.AI.OpenAI 1.23.0), con chat interactivo en streaming, sesión (`AgentSession`) que mantiene el historial entre preguntas y uso de tokens. |
 
 ## Requisitos
 

@@ -101,6 +101,9 @@ ChatClientAgent aiAgent = new (chatClient.AsIChatClient(), options);
 //     }
 // }
 
+// Módulo 5: Integramos sesiones y manejo de estado
+var session = await aiAgent.CreateSessionAsync();
+
 while(true)
 {
     Console.WriteLine("Escribe tu pregunta:");
@@ -118,7 +121,7 @@ while(true)
 
     var message = new Microsoft.Extensions.AI.ChatMessage(ChatRole.User, contents);
 
-    await foreach(AgentResponseUpdate item in aiAgent.RunStreamingAsync(message))
+    await foreach(AgentResponseUpdate item in aiAgent.RunStreamingAsync(message, session))
     {
         Console.Write(item.Text);
 
